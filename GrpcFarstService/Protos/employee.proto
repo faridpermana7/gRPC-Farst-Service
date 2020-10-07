@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcEmployee";
+
+package employee;
+
+// The greeting service definition.
+service EmployeeProvider {
+  // Sends a greeting
+  rpc GetEmployeeByEmpID (EmployeeRequest) returns (EmployeeResponse);
+}
+
+// The request message containing the user's name.
+message EmployeeRequest {  
+	int64 EmployeeID = 1;
+}
+
+// The response message containing the greetings.
+message EmployeeResponse {
+    enum Status { 
+        NOTFOUND = 0;
+        SUCCESS = 1;
+        FAILED = 2;
+        INTERNALSERVERERROR = 3;
+    }
+    Status StatusCode = 1;
+    string message = 2;
+    EmployeeDTO Data = 3; 
+}
+
+
+message EmployeeDTO {
+  int64 EmployeeID = 1;
+  string NIK = 2;
+  string Name = 3;
+  string Occupation = 4;
+  string Address = 5;
+}

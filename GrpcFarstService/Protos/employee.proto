@@ -7,12 +7,15 @@ package employee;
 // The greeting service definition.
 service EmployeeProvider {
   // Sends a greeting
+  rpc GetEmployee (EmployeeRequest) returns (EmployeeResponse);
   rpc GetEmployeeByEmpID (EmployeeRequest) returns (EmployeeResponse);
 }
 
 // The request message containing the user's name.
 message EmployeeRequest {  
 	int64 EmployeeID = 1;
+    int64 UserID = 2;
+    int64 MemberID = 3;
 }
 
 // The response message containing the greetings.
@@ -25,7 +28,7 @@ message EmployeeResponse {
     }
     Status StatusCode = 1;
     string message = 2;
-    EmployeeDTO Data = 3; 
+    repeated EmployeeDTO Data = 3; 
 }
 
 

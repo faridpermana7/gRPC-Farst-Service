@@ -1,5 +1,5 @@
 # gRPCFarstService
-![Hex.pm](https://img.shields.io/hexpm/l/grpc) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/faridpermana7/grpcfarstservice) ![GitHub issues](https://img.shields.io/github/issues/faridpermana7/grpcfarstservice)
+![Hex.pm](https://img.shields.io/hexpm/l/grpc) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/faridpermana7/grpcfarstservice) ![GitHub issues](https://img.shields.io/github/issues/faridpermana7/grpc-farst-service)
 
 ### AUTHOR : FARID PERMANA
 

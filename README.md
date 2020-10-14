@@ -5,15 +5,20 @@
 
 gRPC service that provide service for client like MVC .NET core, with data structure protobuf
 
+## What's new
+What's new in version 1.1.1
+  1. Implement data access use Entity Framework core
+  2. Use MS. SQL Server as database
+  3. Make GrpcFarstCommon, library that manage manager on repository
+  4. Create manager for handle data access and deliver to service 
+  
+
 ## Preview: 
 ![alt text](https://github.com/faridpermana7/faridpermana7.github.io/blob/master/img/grpc-service.PNG "SC")
 
-## What's new
-What's new in version 0.1.1
-  1. provide proto service 
-  
-## Configuration: 
- -  open Proto folder, and make new prot 
+## How to make new protobuf: 
+ 1  Open Proto folder
+ 2  Make new proto
  
 ## Example Proto Response :
 

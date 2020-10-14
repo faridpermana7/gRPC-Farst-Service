@@ -10,7 +10,7 @@ What's new in version 1.1.1
   1. Implement data access use Entity Framework core
   2. Use MS. SQL Server as database
   3. Make GrpcFarstCommon, library that manage manager on repository
-  4. Create manager for handle data access and deliver to service 
+  4. Create manager for handling data access and deliver to service 
   
 
 ## Preview: 

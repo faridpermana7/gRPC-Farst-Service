@@ -9,6 +9,9 @@ service EmployeeProvider {
   // Sends a greeting
   rpc GetEmployee (EmployeeRequest) returns (EmployeeResponse);
   rpc GetEmployeeByEmpID (EmployeeRequest) returns (EmployeeResponse);
+  rpc Insert (EmployeeDTO) returns (EmployeeResponse);
+  rpc Update (EmployeeDTO) returns (EmployeeResponse);
+  rpc Delete (EmployeeRequest) returns (EmployeeResponse);
 }
 
 // The request message containing the user's name.
@@ -18,7 +21,7 @@ message EmployeeRequest {
     int64 MemberID = 3;
 }
 
-// The response message containing the greetings.
+// The response message.
 message EmployeeResponse {
     enum Status { 
         NOTFOUND = 0;
@@ -31,7 +34,7 @@ message EmployeeResponse {
     repeated EmployeeDTO Data = 3; 
 }
 
-
+// DTO object
 message EmployeeDTO {
   int64 EmployeeID = 1;
   string NIK = 2;
@@ -39,3 +42,4 @@ message EmployeeDTO {
   string Occupation = 4;
   string Address = 5;
 }
+ 

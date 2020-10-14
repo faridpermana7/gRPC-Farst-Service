@@ -17,4 +17,14 @@
     <PackageReference Include="Grpc.AspNetCore" Version="2.27.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GrpcFarstCommon\GrpcFarstCommon.csproj" />
+    <ProjectReference Include="..\GrpcFarstRepo\GrpcFarstRepo.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Manager\Transaction\" />
+    <Folder Include="Services\Transaction\" />
+  </ItemGroup>
+
 </Project>
